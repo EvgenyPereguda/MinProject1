@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amiibo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <template id="card-template">
+        <div class="card">
+            <div class="card-title">character</div>
+            <img class="card-image" alt="card-image"/>
+            <div class="card-title">character</div>
+        </div>
+    </template>
+
+    <div>
+        <div class="navbar">
+            <div>
+                <img class="image-scale" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlQLr72uDrk6uj9yhJcgQgiHmfYeQAnPfW0w&s" alt="Amiibo logo" />
+                <div class="title">Amiibo database</div>
+            </div>
+            <div>
+                <div class="selection">
+                    <div>Amiibo's Type:</div>
+                    <select>
+                        <option>All</option>
+                        <option>Card</option>
+                    </select>
+                </div>
+                <div class="selection">
+                    <div>Amiibo's Series:</div>
+                    <select>
+                        <option>All</option>
+                        <option>Card</option>
+                    </select>
+                </div>
+                <div class="selection">
+                    <div>Game Series:</div>
+                    <select>
+                        <option>All</option>
+                        <option>Card</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        </div>
+    </div>  
+    
+    <script src="./index.js"></script> 
+</body>
+</html>
