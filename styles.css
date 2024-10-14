@@ -36,7 +36,7 @@
     }
 
     .selection > div{
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 
     .selection > select{
@@ -55,18 +55,21 @@
     .card{
         margin: 1em;
         padding: 1em;
-        min-width:20em;
-        border: 0.025em solid gray;
+        width:22em;
+        /* border: 0.025em solid gray; */
+        background-image: radial-gradient(circle, yellow 40%, white 65% );
     }
 
     .card-title{
+        word-wrap: break-word;
         text-align: center;
         font-size: 2em;
+        background-color: transparent;
     }
       
     .card-image{
         margin: 1em;
         object-fit:contain;
         width:20em;
-        height:20em;
+        height:20em;    
     }

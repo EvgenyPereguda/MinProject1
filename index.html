@@ -25,20 +25,17 @@
             <div>
                 <div class="selection">
                     <div>Amiibo's Type:</div>
-                    <select id="amiibo-Types">
-                        <option>All</option>
+                    <select id="amiibo-Types" onchange="showSelectedType()">
                     </select>
                 </div>
                 <div class="selection">
                     <div>Amiibo's Series:</div>
-                    <select id="amiiboseries">
-                        <option>All</option>
+                    <select id="amiiboseries" onchange="showSelectedAmiiboSeries()" disabled>
                     </select>
                 </div>
                 <div class="selection">
                     <div>Game Series:</div>
-                    <select id="gameseries">
-                        <option>All</option>
+                    <select id="gameseries" onchange="showSelectedGameSeries()" disabled>
                     </select>
                 </div>
             </div>
