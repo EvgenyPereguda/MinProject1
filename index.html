@@ -10,9 +10,9 @@
     
     <template id="card-template">
         <div class="card">
-            <div class="card-title">character</div>
+            <div id="card-name" class="card-title">character</div>
             <img class="card-image" alt="card-image"/>
-            <div class="card-title">character</div>
+            <div id="gameseries-name" class="card-title">character</div>
         </div>
     </template>
 
@@ -25,28 +25,25 @@
             <div>
                 <div class="selection">
                     <div>Amiibo's Type:</div>
-                    <select>
+                    <select id="amiibo-Types">
                         <option>All</option>
-                        <option>Card</option>
                     </select>
                 </div>
                 <div class="selection">
                     <div>Amiibo's Series:</div>
-                    <select>
+                    <select id="amiiboseries">
                         <option>All</option>
-                        <option>Card</option>
                     </select>
                 </div>
                 <div class="selection">
                     <div>Game Series:</div>
-                    <select>
+                    <select id="gameseries">
                         <option>All</option>
-                        <option>Card</option>
                     </select>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="card-list" class="container">
         </div>
     </div>  
     
