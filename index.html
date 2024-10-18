@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amiibo</title>
+    <title>Amiibo database</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +11,8 @@
     <template id="card-template">
         <div class="card">
             <div id="card-name" class="card-title">character</div>
-            <img class="card-image" alt="card-image"/>
-            <div id="gameseries-name" class="card-title">character</div>
+            <img loading="lazy" class="card-image" alt="card-image"/>
+            <div id="gameseries-name" class="card-description">character</div>
         </div>
     </template>
 
@@ -20,24 +20,36 @@
         <div class="navbar">
             <div>
                 <img class="image-scale" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlQLr72uDrk6uj9yhJcgQgiHmfYeQAnPfW0w&s" alt="Amiibo logo" />
-                <div class="title">Amiibo database</div>
+                <div>Amiibo database</div>
             </div>
-            <div>
-                <div class="selection">
-                    <div>Amiibo's Type:</div>
-                    <select id="amiibo-Types" onchange="showSelectedType()">
-                    </select>
-                </div>
-                <div class="selection">
-                    <div>Amiibo's Series:</div>
-                    <select id="amiiboseries" onchange="showSelectedAmiiboSeries()" disabled>
-                    </select>
-                </div>
-                <div class="selection">
-                    <div>Game Series:</div>
-                    <select id="gameseries" onchange="showSelectedGameSeries()" disabled>
-                    </select>
-                </div>
+            <div>     
+                <label class="featureSwitch">
+                    <input type="checkbox" class="navbar-toggle" id="navbarToggle">
+                    <span class="featureSlider"></span>
+                </label>        
+                <ul class="navbar-menu" id="navbarMenu">
+                    <li>    
+                        <div class="selection">
+                            <div>Amiibo's Type:</div>
+                            <select id="amiibo-Types" style="width: 12em" onchange="showSelectedType()">
+                            </select>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="selection">
+                            <div>Amiibo's Series:</div>
+                            <select id="amiiboseries" style="width: 12em" onchange="showSelectedAmiiboSeries()" disabled>
+                            </select>
+                        </div>
+                    </li>
+                        <li> 
+                        <div class="selection">
+                            <div>Game Series:</div>
+                            <select id="gameseries" style="width: 12em" onchange="showSelectedGameSeries()" disabled>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div id="card-list" class="container">
